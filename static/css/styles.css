@@ -6,7 +6,7 @@ body {
 }
 
 .chat-container {
-    width           : 800px;
+    width           : 1000px;
     margin          : 50px auto;
     background-color: #fff;
     border-radius   : 5px;
@@ -15,9 +15,12 @@ body {
 }
 
 .chat-header {
-    background-color: #4CAF50;
-    color           : white;
+    background-color: #fff;
+    color           : #4CAF50;
     padding         : 15px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
     text-align      : center;
 }
 
@@ -30,7 +33,7 @@ body {
     border-right    : 1px solid #ddd;
     padding         : 15px;
     box-sizing      : border-box;
-    background-color: #f9f9f9;
+    background-color: #4CAF50;
 }
 
 .sample-questions h3 {
@@ -56,13 +59,12 @@ body {
 }
 
 .chat-box {
-    width        : 70%;
-    height       : 400px;
-    padding      : 15px;
-    overflow-y   : scroll;
-    border-top   : 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    box-sizing   : border-box;
+    width     : 70%;
+    height    : 400px;
+    padding   : 15px;
+    overflow-y: scroll;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box;
 }
 
 .message {
