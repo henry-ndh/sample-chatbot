@@ -22,16 +22,20 @@ pairs = [
         ["I am a chatbot created using NLTK.", "You can call me ChatBot."]
     ],
     [
-        r"how are you\??",
-        ["I'm doing well, thank you!\nHow about you?", "I'm here to help you!"]
+        r"What are the university's hours of operation\??",
+        ["The university is open Monday to Friday from 8 AM to 6 PM.\n"]
     ],
     [
-        r"sorry (.*)",
-        ["It's alright.", "No worries!", "It's okay, no problem."]
+        r"When are admissions open\??",
+        ["Admissions are open until the end of the month. You can apply online via the university website.\n"]
     ],
     [
-        r"i am fine",
-        ["Great to hear that! How can I assist you today?", "Awesome! Let me know if you need anything."]
+        r"How can I contact the admissions office?(.*)",
+        ["You can contact the admissions office at admissions@university.edu or call 555-1234.\n"]
+    ],
+    [
+        r"What courses are available at the university?",
+        ["Courses available include Computer Science, Business Administration, Engineering, and more. Visit the website for a full list.\n"]
     ],
     [
         r"quit",
@@ -40,9 +44,20 @@ pairs = [
     [
         r".*\bhours\b.*",
         ["The university is open from 8 AM to 6 PM."]
-    ]
+    ],
+    [
+        r".*\badmissions\b.*",
+        ["Admissions are open until the end of the month. You can apply online via the university website."]
+    ],
+    [
+        r".*\boffice\b.*",
+        ["You can contact the admissions office at admissions@university.edu or call 555-1234."]
+    ],
+    [
+        r".*\bcourses\b.*",
+        ["Courses available include Computer Science, Business Administration, Engineering, and more. Visit the website for a full list."]
+    ],
 ]
-
 # Khởi tạo chatbot với các cặp câu hỏi và câu trả lời
 chatbot = Chat(pairs, reflections)
 
