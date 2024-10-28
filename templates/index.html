@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot với Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chatbot</h2>
+        </div>
+        <div class="chat-content">
+            <div class="sample-questions">
+                <h3>Câu Hỏi Mẫu</h3>
+                <ul id="sample-questions-list">
+                    <li class="sample-question">Hi</li>
+                    <li class="sample-question">My name is John</li>
+                    <li class="sample-question">What is your name?</li>
+                    <li class="sample-question">How are you?</li>
+                    <li class="sample-question">What are your hours?</li>
+                    <li class="sample-question">Sorry for the inconvenience</li>
+                    <li class="sample-question">I am fine</li>
+                    <li class="sample-question">Quit</li>
+                </ul>
+            </div>
+            <div class="chat-box" id="chat-box">
+                <!-- Các tin nhắn sẽ được hiển thị ở đây -->
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Nhập tin nhắn của bạn..." autocomplete="off">
+            <button id="send-button">Gửi</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

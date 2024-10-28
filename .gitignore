@@ -1,0 +1,22 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore virtual environment folder
+env_name/
+venv/
+env/
+# Ignore IDE configuration files
+.vscode/
+.idea/
+
+# Ignore image and other unnecessary files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+
+# Ignore any other detected or output folder
+detected/
+output/
